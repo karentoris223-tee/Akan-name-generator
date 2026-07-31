@@ -5,7 +5,7 @@ akan-name-generator is a simple web application that calculates the day of the w
 karen toris
 
 # Instruction
-git clone https
+git clone https:git@github.com:karentoris223-tee/akan-name-generator.git
 no installations required
 select your gender
 enter valid date 
