@@ -9,7 +9,7 @@ const resultsText = document.querySelector(".results")
 let month = parseInt(document.getElementById("month").value);
 let day = parseInt(document.getElementById("day").value);
 let year = parseInt(document.getElementById("year").value);
-let gender = document.queryselector('input[name="gender"]:checked').value;
+let gender = document.querySelector('input[name="gender"]:checked').value;
 
 if (month < 1 || month > 12) {
         ("enter a valid month");
