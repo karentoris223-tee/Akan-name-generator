@@ -6,18 +6,16 @@ const femaleNames = ["akosua", "adwoa", "abenaa", "akua", "yaa", "afua", "ama"];
 
 const resultsText = document.querySelector(".results")
 
-let month = parseInt(document.getElementById("month").value);
-let day = parseInt(document.getElementById("day").value);
-let year = parseInt(document.getElementById("year").value);
-let gender = document.querySelector('input[name="gender"]:checked').value;
+let month = parseInt(document.getElementById("month"));
+let day = parseInt(document.getElementById("day"));
+let year = parseInt(document.getElementById("year"));
+let gender = document.querySelector('input[name="gender"]:checked');
 
 if (month < 1 || month > 12) {
     resultsText.textContent = "enter a valid month";
-    return;
 }
 if (day < 1 || day > 31) {
-    resultsText.textcontent = "enter a valid day"
-    return;
+    resultsText.textcontent = "enter a valid day";
 }
 
 let CC = Math.floor(year / 100);
@@ -36,9 +34,8 @@ if (gender === "male") {
     akanName = femaleNames[dayIndex];
 } else {
     resultText.textcontent = "Please select a gender";
-    return;
 }
 
-resultText.textcontent = 'Your Akan name is ${akanName.charAt(0).toUpperCase() + akanName.slice(1)}. You were born on a ${days[dayIndex].charAt(0).toUpperCase() + days[dayIndex].slice(1)}.';
+resultText.textcontent = 'Your Akan name is ${akanName}.';
 
 
