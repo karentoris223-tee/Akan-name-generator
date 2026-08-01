@@ -16,7 +16,7 @@ if (month < 1 || month > 12) {
     return;
 }
 if (day < 1 || day > 31) {
-        ("enter a valid day")
+    resultsText.textcontent = "enter a valid day"
     return;
 }
 
