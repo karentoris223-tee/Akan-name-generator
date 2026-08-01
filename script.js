@@ -29,6 +29,16 @@ let d = ((CC/4) - (2*CC) - 1 + ((5*YY)/4) + ((26*(MM+1))/10) + DD ) % 7;
 let dayIndex = Math.floor(d);
 if (dayIndex < 0) dayIndex = dayIndex + 7;
 
-let akanName = gender === "male"? maleNames[dayIndex] : femaleNames[dayIndex];
+let akanName;
+if (gender === "male") {
+    akanName = maleNames[dayIndex];
+} else if (gender === "female") {
+    akanName = femaleNames[dayIndex];
+} else {
+    resultText.textcontent = "Please select a gender";
+    return;
+}
+
+resultText.textcontent = 'Your Akan name is ${akanName.charAt(0).toUpperCase() + akanName.slice(1)}. You were born on a ${days[dayIndex].charAt(0).toUpperCase() + days[dayIndex].slice(1)}.';
 
 
