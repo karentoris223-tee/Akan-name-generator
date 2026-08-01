@@ -12,11 +12,11 @@ let year = parseInt(document.getElementById("year").value);
 let gender = document.queryselector('input[name="gender"]:checked').value;
 
 if (month < 1 || month > 12) {
-    alert("enter a valid month");
+        ("enter a valid month");
     return;
 }
 if (day < 1 || day > 31) {
-    alert("enter a valid day")
+        ("enter a valid day")
     return;
 }
 
