@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>akan-name-generator</title>
+    <link rel="stylesheet" href="/styles.css">      
 </head>
 <body>
-    
+
+    <div class="container">
+    <h1>Akan-Name-Generator</h1>
+    <p>Find your Akan name based on your birthday and gender</p>
+
+    <form class="akanName">
+        <label for="birthday">Enter Your Birthday</label>
+
+        <label for="month">Month</label>
+        <input type="number" id="month" placeholder="mm" min="1" max="12">
+
+        <label for="date">Date</label>
+        <input type="number" id="date" placeholder="dd" min="1" max="31">
+
+        <label for="year">Year</label>
+        <input type="number" id="year" placeholder="yy" min="2000" max="2026">
+
+    <section class="box">
+        <h2>select gender</h2>
+        <input type="radio" name="gender" id="Male" required> 
+        <label for="male">male</label>
+
+        <input type="radio" name="gender" id="female" required> 
+        <label for="female">female</label>
+    </section>
+
+        <button type="submit">Get akan name</button>
+        <div class="results">results</div>
+
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>
