@@ -4,8 +4,7 @@ const maleNames = ["kwasi", "kwadwo", "kwabena", "kwaku", "yaw", "kofi", "kwame"
 
 const femaleNames = ["akosua", "adwoa", "abenaa", "akua", "yaa", "afua", "ama"];
 
-document.getElementById("akanName").addEventListener("submit",) 
-    e.preventDefault();
+const resultsText = document.querySelector(".results")
 
 let month = parseInt(document.getElementById("month").value);
 let day = parseInt(document.getElementById("day").value);
