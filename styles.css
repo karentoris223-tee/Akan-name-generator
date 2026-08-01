@@ -23,11 +23,19 @@ body {
     margin: 10px;
     object-fit: cover;
 }
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.container p {
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
 
 .akanname {
     border-radius: 20px;
     margin: 10px;
-    justify-content: center;
     padding: 25px;
 }
 
