@@ -31,7 +31,14 @@ body {
     margin-bottom: 25px;
     font-size: 2rem;
 }
-
+.date-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+.
 
 .akanname {
     border-radius: 20px;
