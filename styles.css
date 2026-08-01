@@ -84,7 +84,9 @@ button:hover {
     transorm: scale(1.03);
 }
 
-.result {
+.results {
     margin-top: 15px;
-    
+    font-weight: bold;
+    min-height: 30px;
+    font-size: 1.2rem;  
 }
