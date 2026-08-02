@@ -4,6 +4,7 @@ const maleNames = ["kwasi", "kwadwo", "kwabena", "kwaku", "yaw", "kofi", "kwame"
 
 const femaleNames = ["akosua", "adwoa", "abenaa", "akua", "yaa", "afua", "ama"];
 
+const btn = document.querySelector("#btn")
 const resultsText = document.querySelector(".results")
 
 let month = parseInt(document.getElementById("month"));
@@ -36,6 +37,6 @@ if (gender === "male") {
     resultText.textcontent = "Please select a gender";
 }
 
-resultText.textcontent = 'Your Akan name is ${akanName}.';
+resultText.textcontent = ' You were born on ${days[dayIndex]}. Your Akan name is ${akanName}.';
 
 
